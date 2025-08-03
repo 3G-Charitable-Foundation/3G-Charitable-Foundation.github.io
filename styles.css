@@ -213,6 +213,46 @@ p {
     animation: fadeInUp 1s ease 0.4s both;
 }
 
+.hero-email {
+    margin-top: 40px;
+    animation: fadeInUp 1s ease 0.6s both;
+    text-align: center;
+}
+
+.hero-email p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+.hero-email-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    padding: 12px 25px;
+    border-radius: 50px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.hero-email-link:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.hero-email-link i {
+    font-size: 1.2rem;
+}
+
 /* Section Styles */
 section {
     padding: 100px 0;
@@ -245,6 +285,41 @@ section {
     font-size: 1.2rem;
     max-width: 600px;
     margin: 0 auto;
+}
+
+.email-highlight {
+    margin-top: 30px;
+    padding: 20px 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 50px;
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
+    transition: all 0.3s ease;
+}
+
+.email-highlight:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 15px 35px rgba(102, 126, 234, 0.4);
+}
+
+.email-highlight i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.email-link {
+    color: white !important;
+    text-decoration: none !important;
+    font-size: 1.2rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.email-link:hover {
+    color: #f0f0f0 !important;
+    text-decoration: underline !important;
 }
 
 /* About Section */
@@ -354,6 +429,75 @@ section {
 .info-card p {
     color: #666;
     margin: 0;
+}
+
+.timeline-highlight {
+    margin-top: 40px;
+    padding: 30px;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border-left: 5px solid #667eea;
+}
+
+.timeline-highlight h3 {
+    color: #333;
+    margin-bottom: 25px;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.timeline-highlight i {
+    color: #667eea;
+    font-size: 1.3rem;
+}
+
+.timeline-content {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.timeline-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background: #f8f9fa;
+    border-radius: 12px;
+    transition: all 0.3s ease;
+    border-left: 3px solid #667eea;
+}
+
+.timeline-item:hover {
+    background: #667eea;
+    color: white;
+    transform: translateX(10px);
+}
+
+.timeline-item .year {
+    font-weight: 700;
+    font-size: 1.1rem;
+    color: #667eea;
+    min-width: 80px;
+    text-align: center;
+    padding: 5px 10px;
+    background: white;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover .year {
+    color: #667eea;
+    background: white;
+}
+
+.timeline-item .milestone {
+    font-size: 1rem;
+    line-height: 1.4;
+    flex: 1;
 }
 
 /* Mission Section */
@@ -632,6 +776,68 @@ section {
     line-height: 1.4;
 }
 
+.contact-item a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+    color: #667eea;
+    text-decoration: underline;
+}
+
+.contact-item:hover a {
+    color: white;
+}
+
+.email-featured {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%) !important;
+    color: white !important;
+    border: 3px solid #667eea;
+    transform: scale(1.05);
+    order: -1;
+}
+
+.email-featured:hover {
+    background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%) !important;
+    transform: scale(1.05) translateY(-5px) !important;
+    box-shadow: 0 15px 40px rgba(102, 126, 234, 0.4) !important;
+}
+
+.email-featured i {
+    color: white !important;
+    font-size: 2rem;
+}
+
+.email-featured h3 {
+    color: white !important;
+    margin-bottom: 10px;
+}
+
+.email-address {
+    margin-bottom: 8px !important;
+}
+
+.email-address a {
+    color: white !important;
+    font-weight: 600 !important;
+    font-size: 1.1rem;
+    text-decoration: none !important;
+}
+
+.email-address a:hover {
+    color: #f0f0f0 !important;
+    text-decoration: underline !important;
+}
+
+.email-description {
+    color: rgba(255, 255, 255, 0.9) !important;
+    font-size: 0.95rem;
+    font-style: italic;
+    margin: 0 !important;
+}
+
 /* Contact Form */
 .contact-form {
     background: #f8f9fa;
@@ -690,6 +896,48 @@ section {
 .footer-section p {
     color: #ccc;
     line-height: 1.6;
+}
+
+.footer-section p a {
+    color: #ccc;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-section p a:hover {
+    color: #667eea;
+}
+
+.footer-email {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 15px 0;
+    padding: 12px;
+    background: rgba(102, 126, 234, 0.1);
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.footer-email:hover {
+    background: rgba(102, 126, 234, 0.2);
+    transform: translateX(5px);
+}
+
+.footer-email i {
+    color: #667eea;
+    font-size: 1.1rem;
+}
+
+.footer-email a {
+    color: #ccc !important;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.footer-email a:hover {
+    color: #667eea !important;
 }
 
 .footer-section ul {
@@ -771,6 +1019,35 @@ section {
     .hero-buttons {
         flex-direction: column;
         align-items: center;
+    }
+    
+    .hero-email {
+        margin-top: 30px;
+    }
+    
+    .hero-email p {
+        font-size: 1rem;
+    }
+    
+    .hero-email-link {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+    
+    .email-highlight {
+        padding: 15px 25px;
+    }
+    
+    .email-link {
+        font-size: 1.1rem;
+    }
+    
+    .email-featured {
+        transform: scale(1) !important;
+    }
+    
+    .email-featured:hover {
+        transform: translateY(-5px) !important;
     }
     
     .about-content {
@@ -867,6 +1144,23 @@ section {
     
     .about-image {
         height: 200px;
+    }
+    
+    .timeline-highlight {
+        margin-top: 30px;
+        padding: 20px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        text-align: left;
+    }
+    
+    .timeline-item .year {
+        min-width: auto;
+        align-self: flex-start;
     }
     
     .mission-image {

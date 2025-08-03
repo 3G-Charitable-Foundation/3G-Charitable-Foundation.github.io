@@ -60,7 +60,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Animate elements on scroll
 const animateOnScroll = () => {
-    const elements = document.querySelectorAll('.stat-item, .info-card, .value-item, .beneficiary-card, .contact-item, .about-image, .mission-image, .impact-image');
+    const elements = document.querySelectorAll('.stat-item, .info-card, .value-item, .beneficiary-card, .contact-item, .about-image, .mission-image, .impact-image, .email-highlight, .timeline-highlight, .timeline-item');
     
     elements.forEach(element => {
         element.style.opacity = '0';
